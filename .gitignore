@@ -1,2 +1,8 @@
 node_modules
 .DS_Store
+
+# Build files
+/dist
+
+# Nova app (code editor) related files
+/.nova
