@@ -1,11 +1,13 @@
-// 
+//
 // Global
 //
 
 // Scroll padding for all scroll targets on page used with
 // native CSS smooth scrolling
-// 
+//
 // https://caniuse.com/?search=scroll-padding
+
+@use "sass:color";
 
 html {
     scroll-padding-top: 4.5rem;
@@ -19,6 +21,18 @@ html {
 
 .bg-gradient-primary-to-secondary {
     background: linear-gradient(45deg, #{$primary}, #{$secondary}) !important;
+}
+
+.btn-bg-gradient-primary-to-secondary {
+    background: linear-gradient(45deg, #{$primary}, #{$secondary}) !important;
+
+    &:hover {
+        background: linear-gradient(45deg, color.scale($primary, $lightness: 15%), color.scale($secondary, $lightness: 15%)) !important;
+    }
+
+    &:active {
+        background: linear-gradient(45deg, color.scale($primary, $lightness: 25%), color.scale($secondary, $lightness: 25%)) !important;
+    }
 }
 
 .font-alt {

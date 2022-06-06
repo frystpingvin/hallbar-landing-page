@@ -10,7 +10,8 @@
         "build:scss": "node scripts/build-scss.js",
         "clean": "node scripts/clean.js",
         "start": "npm run build && node scripts/start.js",
-        "start:debug": "npm run build && node scripts/start-debug.js"
+        "start:debug": "npm run build && node scripts/start-debug.js",
+        "deploy": "npm run build && gh-pages -d dist"
     },
     "description": "A one page app landing page HTML theme for Bootstrap.",
     "keywords": [
@@ -43,6 +44,7 @@
         "browser-sync": "2.27.9",
         "chokidar": "3.5.3",
         "concurrently": "6.3.0",
+        "gh-pages": "^4.0.0",
         "postcss": "8.4.12",
         "prettier": "2.6.0",
         "pug": "3.0.2",
