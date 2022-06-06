@@ -11299,6 +11299,16 @@ html {
   background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
 }
 
+.btn-bg-gradient-primary-to-secondary {
+  background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
+}
+.btn-bg-gradient-primary-to-secondary:hover {
+  background: linear-gradient(45deg, #4955f2, #ae3ae8) !important;
+}
+.btn-bg-gradient-primary-to-secondary:active {
+  background: linear-gradient(45deg, #5f69f4, #b851eb) !important;
+}
+
 .font-alt {
   font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }
